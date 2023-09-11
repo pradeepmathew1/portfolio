@@ -21,7 +21,7 @@
             font-family: 'Open Sans', sans-serif; /* Changed font to Open Sans */
             margin: 0;
             padding: 0;
-            background-color: #000000; /* Changed background color #ececec*/
+            background-color: #000000; /* Changed background color */
         }
 
         .wrapper {
@@ -43,6 +43,7 @@
 
         .title {
             margin: 0;
+			color: brown;
         }
 
         .container {
@@ -66,9 +67,19 @@
             margin-right: 20px;
         }
 
+        /* Updated CSS for navigation links */
         .navigation-link {
-            text-decoration: none;
-            color: #fff;
+            text-decoration: underline overline;
+            color: black;
+			font-weight: bold;
+            padding: 5px 10px; /* Added padding for the highlight effect */
+            border-radius: 4px; /* Added rounded corners for the highlight effect */
+            transition: background-color 0.3s, color 0.3s; /* Added smooth transition */
+        }
+
+        .navigation-link:hover {
+            background-color: #8B4513; /* Black background on hover */
+            color: #000000; /* White text on hover */
         }
 
         #about {
@@ -109,24 +120,13 @@
                 <a class="navigation-title">
                     <h1 class="title">Pradeep Mathew's Portfolio</h1>
                 </a>
-                <ul class="navigation-list float-right">
-                    <li class="navigation-item">
-                        <a class="navigation-link" target="_blank" href="https://github.com/pradeepmathew1">GitHub</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" target="_blank" href="https://www.linkedin.com/in/pradeep-mathew-97420523/">LinkedIn</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" target="_blank" href="assets/MyResume.pdf">Resume</a>
-                    </li>
-                </ul>
             </section>
         </nav>
 
         <section class="container" id="about">
             <p></p>
             <h2 class="title">About</h2>
-			<br>
+            <br>
             <p>Hello, I'm Pradeep Mathew, a DevOps consultant based in Melbourne.<br>Currently working for 'Tabcorp' as a DevOps Automation Engineer.</p>
             <p>Being in Melbourne for more than a decade and worked in few industries like<br>Financial services, Consulting, Insurance and Retail.</p>
 
@@ -136,7 +136,7 @@
 
             <h3 class="title">Technical Skills</h3>
             <p>
-			<br>
+            <br>
             Cloud Computing: AWS, Azure<br>
             Infrastructure as Code: Terraform, AWS CloudFormation<br>
             Automation: Bash, PowerShell<br>
@@ -150,17 +150,29 @@
             <br>
             <h3 class="title">Certifications</h3>
             <p>
-			<br>
-            AWS Certified Cloud Practitioner<br>
-            AWS Certified Solutions Architect – Associate<br>
-            HashiCorp Certified: Terraform Associate<br>
-            Azure DevOps Engineer Expert<br>
-            Azure Administrator<br>
-            Azure Fundamentals<br>
-            ITIL 3&4 Foundation<br>
+            <br>
+            *AWS Certified Cloud Practitioner<br>
+            *AWS Certified Solutions Architect – Associate<br>
+            *HashiCorp Certified: Terraform Associate<br>
+            *Azure DevOps Engineer Expert<br>
+            *Azure Administrator<br>
+            *Azure Fundamentals<br>
+            *ITIL 3&4 Foundation<br>
             </p>
             <br>
             <br>
+            <!-- Moved the links here -->
+            <ul class="navigation-list float-right">
+                <li class="navigation-item">
+                    <a class="navigation-link" target="_blank" href="https://github.com/pradeepmathew1">GitHub</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" target="_blank" href="https://www.linkedin.com/in/pradeep-mathew-97420523/">LinkedIn</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" target="_blank" href="assets/MyResume.pdf">Resume</a>
+                </li>
+            </ul>
         </section>
     </main>
 </body>
