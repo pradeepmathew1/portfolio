@@ -1,9 +1,14 @@
+/* Add custom styles here */
+
 html {
-  background-color: #181a1b;
+    background-color: #2a2d2e; /* Updated background color for the html */
 }
 
 body {
-  color: rgb(164, 157, 145);
+    font-family: 'Open Sans', sans-serif; /* Changed font to Open Sans */
+    margin: 0;
+    padding: 0;
+    color: rgb(164, 157, 145); /* Updated text color for better readability */
 }
 
 h4 {
@@ -13,22 +18,22 @@ h4 {
 }
 
 .navigation {
-  background-color: rgb(31, 34, 36);
-  border-bottom-color: rgb(119, 110, 97);
+    background-color: rgb(31, 34, 36);
+    border-bottom-color: rgb(119, 110, 97);
 }
 
 .navigation .title {
-  color: rgb(164, 157, 145);
+    color: rgb(164, 157, 145);
 }
 
 .button {
-  background-color: rgb(108, 44, 146);
-  border-color: rgb(97, 39, 132);
-  color: rgb(232, 230, 227);
+    background-color: rgb(108, 44, 146);
+    border-color: rgb(97, 39, 132);
+    color: rgb(232, 230, 227);
 }
 
 .wrapper > .container {
-  padding-bottom: 0rem;
-  padding-top: 6.5rem;
+    padding-bottom: 0rem;
+    padding-top: 6.5rem;
 }
 
